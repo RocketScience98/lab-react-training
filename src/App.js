@@ -39,9 +39,9 @@ function App() {
   picture="https://randomuser.me/api/portraits/women/44.jpg"
 />
       </div>
+<div class = "border border-dark m-4 p-2">      <Greeting language="de" children="Hans"></Greeting> </div>
 
-      <Greeting language="de" children="Hans"></Greeting>
-      <Greeting language="fr" children = "Pierre"></Greeting>
+<div class = "border border-dark m-4 p-2">   <Greeting language="fr" children = "Pierre"></Greeting> </div>
       <Random min={1} max={6} />
       <CreditCard
         type="Visa"

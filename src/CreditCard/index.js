@@ -26,7 +26,7 @@ export default function CreditCard(props) {
       return (
         <div style={cardColor}>
           <div>
-            <img src={cardType[type]} alt="credit card" width="50%" />
+            <img src={cardType[type]} alt="credit card" width="20rem" class= "card"/>
           </div>
     
           <div>
