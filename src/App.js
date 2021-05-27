@@ -9,6 +9,13 @@ import BoxColor from "./BoxColor"
 import Random from "./Random"
 import Rating from "./Rating"
 import DriverCard from "./DriverCard"
+import LikeButon from './components/LikeButon';
+import ClickablePicture from "./components/ClickablePicture"
+import Dice from "./components/Dice"
+import Carousel from "./components/Carousel"
+import NumbersTable from "./components/NumbersTable"
+import FaceBook from "./components/Facebook"
+
 function App() {
  const cardData = data.default
 
@@ -97,6 +104,22 @@ function App() {
           licensePlate: 'BE33ER',
         }}
       />
+      <LikeButon></LikeButon>
+      <ClickablePicture
+  img='/img/persons/maxence.png'
+  imgClicked='/img/persons/maxence-glasses.png'
+/>
+<Dice/>
+<Carousel
+  imgs={[
+    'https://randomuser.me/api/portraits/women/1.jpg',
+    'https://randomuser.me/api/portraits/men/1.jpg',
+    'https://randomuser.me/api/portraits/women/2.jpg',
+    'https://randomuser.me/api/portraits/men/2.jpg'
+  ]}
+/>
+<NumbersTable limit={12} />
+<FaceBook />
       </div>
   );
 }
